@@ -1,0 +1,82 @@
+<div class="container bootstrap snippets bootdey">
+    <div class="row">
+        <div class="profile-nav col-md-3">
+            <div class="panel">
+                <div class="user-heading round">
+                    <a href="#">
+                        <img src={{data.avatar_url}} width="100" class="rounded-circle">
+                    </a>
+                    <h1>{{data.login}}</h1>
+                    <p>{{data.company}}</p>
+                </div>
+
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#"> <i class="fa fa-user"></i> Profile</a></li>
+                    <li><a href="#"> <i class="fa fa-calendar"></i> Recent Activity</a></li>
+                    <li><a href="#"> <i class="fa fa-edit"></i> Edit profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="profile-info col-md-9">
+            <div class="panel">
+                <form>
+                    <textarea placeholder="Whats in your mind today?" rows="2"
+                        class="form-control input-lg p-text-area"></textarea>
+                </form>
+                <footer class="panel-footer">
+                    <button class="btn btn-warning pull-right">Post</button>
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a href="#"><i class="fa fa-map-marker mr-4"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-camera mr-4"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class=" fa fa-film mr-4"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-microphone mr-4"></i></a>
+                        </li>
+                    </ul>
+                </footer>
+            </div>
+            <div class="panel">
+                <div class="bio-graph-heading">
+                    {{data.bio}} </div>
+                <div class="panel-body bio-graph-info">
+                    <h1>Bio Graph</h1>
+                    <div class="row">
+                        <div class="bio-row">
+                            <p><span>First Name </span>{{data.login}}</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Last Name </span>{{data.login}}</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Country </span>{{data.location}}</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Birthday</span>: 13 July 1983</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Total Repos </span>{{data.public_repos}}</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Repos Url </span><a href="#">{{data.repos_url}}</a></p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Followers </span>{{data.followers}}</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>Following </span>{{data.following}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+               
+            </div>
+        </div>
+    </div>
+</div>

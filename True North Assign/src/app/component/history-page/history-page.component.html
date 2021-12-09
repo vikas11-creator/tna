@@ -1,0 +1,17 @@
+<table class="table main">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">History</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of history1; let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{item}}</td>
+      <td (click)="removeSearch(i)"><i class="fa fa-times" aria-hidden="true"></i>
+      </td>
+    </tr>
+  </tbody>
+</table>
